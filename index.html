@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ayodeji Jolansinmi</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0d6efd, #0a58ca);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        /* Container Grid */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: linear-gradient(145deg, #ffffff, #f9f9f9);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            line-height: 1.8;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #0d6efd;
+        }
+
+        /* Contact Section */
+        .contact p {
+            margin: 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0d6efd;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 500px) {
+            header h1 {
+                font-size: 28px;
+            }
+            header p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="profile.jpg" alt="Ayodeji Jolansinmi smiling at the camera">
+    <h1>Ayodeji Jolansinmi</h1>
+    <p>Cybersecurity Enthusiast</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a <span class="highlight">cybersecurity enthusiast</span> passionate about protecting systems, 
+            exploring vulnerabilities, and learning new tech innovations. I aim to help people and organizations 
+            stay secure in the digital world.
+        </p>
+        <p>
+            I also enjoy problem-solving, analyzing digital systems, and continuously improving my knowledge 
+            in cybersecurity and related technologies.
+        </p>
+        <p>
+            My ultimate goal is to build innovative security solutions that have a meaningful impact.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>University:</strong> Cosmopolitan University</li>
+            <li><strong>Course:</strong> Cybersecurity</li>
+            <li><strong>Level:</strong> 200 Level</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Cybersecurity Fundamentals</li>
+            <li>Problem Solving</li>
+            <li>Network & System Analysis</li>
+            <li>Basic Programming</li>
+            <li>Ethical Hacking Awareness</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Interests</h2>
+        <ul>
+            <li>Cybersecurity & Ethical Hacking</li>
+            <li>Artificial Intelligence</li>
+            <li>Tech Problem Solving</li>
+            <li>Digital Innovations</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Goals</h2>
+        <ol>
+            <li>Become a cybersecurity expert</li>
+            <li>Develop innovative security solutions</li>
+            <li>Continuously learn new technologies</li>
+            <li>Contribute to safer digital environments</li>
+        </ol>
+    </div>
+
+    <div class="card contact">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:ayodeji0135@cosmopolitan.edu.ng">📧 ayodeji0135@cosmopolitan.edu.ng</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+2347041884070">📞 +234 704 188 4070</a></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Ayodeji Jolansinmi | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
